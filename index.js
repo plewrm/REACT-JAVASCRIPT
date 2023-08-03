@@ -20,7 +20,9 @@
   arr.reverse();
 
   console.log(arr);
-  Reverse the given array withOut any function
+
+  Reverse the given array withOut any function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
+  const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
   var newArr = [];
   for (let i = arr.length - 1; i >= 0; i--) {
      newArr.push(arr[i])
