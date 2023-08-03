@@ -9,7 +9,8 @@
       }
       return result
   }
-   console.log(singleNumber (nums=[1,1,2]));
+   const nums=[1,1,2]
+   console.log(singleNumber (nums));
 
   ****************************************************************************************
 
