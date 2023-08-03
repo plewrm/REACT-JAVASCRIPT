@@ -263,7 +263,7 @@
 
   console.log(newArr);
   ===========================================************************=============================
-  addition of arrays each element  without using builtin mathod(reduce)
+  addition of arrays each element  without using builtin method(reduce)
 
   const arr = [3, 2, 5, 3, 6];
 
