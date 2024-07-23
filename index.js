@@ -2,23 +2,30 @@
 // once in the array. All the other elements appear twice in the array.
 
 
-// function singleNumber(nums) {
-//     let result = 0
-//     for (const num of nums) {
-//         result ^= num
-//     }
-//     return result
-// }
-// const nums=[1,1,2]
-//  console.log(singleNumber (nums));
+  function singleNumber(nums) {
+      let result = 0
+      for (const num of nums) {
+          result ^= num
+      }
+      return result
+  }
+   const nums=[1,1,2]
+   console.log(singleNumber (nums));
 
 // ****************************************************************************************
 
-//  Reverse the given array with function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
+  Reverse the given array with function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
 
 // const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
 // arr.reverse();
 // console.log(arr);
+
+  Reverse the given array withOut any function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
+  const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
+  var newArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+     newArr.push(arr[i])
+   }
 
 // Reverse the given array withOut function
 // const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
@@ -265,7 +272,7 @@
 
 // console.log(newArr);
 // ===========================================************************=============================
-// addition of arrays each element  without using builtin mathod(reduce)
+// addition of arrays each element  without using builtin method(reduce)
 
 // const arr = [3, 2, 5, 3, 6];
 
