@@ -2,30 +2,30 @@
 // once in the array. All the other elements appear twice in the array.
 
 
-  function singleNumber(nums) {
-      let result = 0
-      for (const num of nums) {
-          result ^= num
-      }
-      return result
-  }
-   const nums=[1,1,2]
-   console.log(singleNumber (nums));
+  // function singleNumber(nums) {
+  //     let result = 0
+  //     for (const num of nums) {
+  //         result ^= num
+  //     }
+  //     return result
+  // }
+  //  const nums=[1,1,2]
+  //  console.log(singleNumber (nums));
 
 // ****************************************************************************************
 
-  Reverse the given array with function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
+  // Reverse the given array with function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
 
 // const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
 // arr.reverse();
 // console.log(arr);
 
-  Reverse the given array withOut any function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
-  const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
-  var newArr = [];
-  for (let i = arr.length - 1; i >= 0; i--) {
-     newArr.push(arr[i])
-   }
+  // Reverse the given array withOut any function const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
+  // const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
+  // var newArr = [];
+  // for (let i = arr.length - 1; i >= 0; i--) {
+  //    newArr.push(arr[i])
+  //  }
 
 // Reverse the given array withOut function
 // const arr = [56, 2, 4, 9, 8, 23, 45, 12, 67, 12, 87, 8, 9, 35, 37];
@@ -913,78 +913,78 @@
 // ======================****************=================*****************=====================
 // create a form that caching errors (form validation without third party library)
 
-import { useState } from 'react';
+// import { useState } from 'react';
 
-function App() {
-  const [formvalues, setFormValues] = useState({
-    email: '',
-    password: '',
-  });
-  const [formerror, setFormError] = useState({});
+// function App() {
+//   const [formvalues, setFormValues] = useState({
+//     email: '',
+//     password: '',
+//   });
+//   const [formerror, setFormError] = useState({});
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormValues({ ...formvalues, [name]: value });
-  };
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormValues({ ...formvalues, [name]: value });
+//   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const errors = validate(formvalues);
-    setFormError(errors);
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const errors = validate(formvalues);
+//     setFormError(errors);
 
-    // Check if there are no errors before submitting the form
-    if (Object.keys(errors).length === 0) {
-      console.log('Form submitted successfully:', formvalues);
-    } else {
-      console.log('Form has errors:', errors);
-    }
-  };
+//     // Check if there are no errors before submitting the form
+//     if (Object.keys(errors).length === 0) {
+//       console.log('Form submitted successfully:', formvalues);
+//     } else {
+//       console.log('Form has errors:', errors);
+//     }
+//   };
 
-  const validate = (values) => {
-    const errors = {};
+//   const validate = (values) => {
+//     const errors = {};
 
-    if (!values.email) {
-      errors.email = 'Email is required';
-    }
-    if (!values.password) {
-      errors.password = 'Password is required';
-    }
-    return errors;
-  };
+//     if (!values.email) {
+//       errors.email = 'Email is required';
+//     }
+//     if (!values.password) {
+//       errors.password = 'Password is required';
+//     }
+//     return errors;
+//   };
 
-  return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <h2>Add data </h2>
-        <div>
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            value={formvalues.email}
-            onChange={handleChange}
-          />
-          <p>{formerror.email}</p>
-        </div>
-        <br />
-        <div>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formvalues.password}
-            onChange={handleChange}
-          />
-          <p>{formerror.password}</p>
-        </div>
-        <br />
-        <button type="submit">Submit</button>
-      </form>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <form onSubmit={handleSubmit}>
+//         <h2>Add data </h2>
+//         <div>
+//           <input
+//             type="text"
+//             name="email"
+//             placeholder="Email"
+//             value={formvalues.email}
+//             onChange={handleChange}
+//           />
+//           <p>{formerror.email}</p>
+//         </div>
+//         <br />
+//         <div>
+//           <input
+//             type="password"
+//             name="password"
+//             placeholder="Password"
+//             value={formvalues.password}
+//             onChange={handleChange}
+//           />
+//           <p>{formerror.password}</p>
+//         </div>
+//         <br />
+//         <button type="submit">Submit</button>
+//       </form>
+//     </>
+//   );
+// }
 
-export default App;
+// export default App;
 
 
 // ========================================================
